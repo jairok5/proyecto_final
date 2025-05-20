@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Renta de Chofer - Rentacar</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Script para cálculos -->
+    <script src="js/rentacar.js"></script>
+
+</head>
+<body>
+
+    <header class="text-center p-4">
+        <h1>Rentacar</h1>
+        <p>Tu renta de autos en un solo lugar</p>
+        <img src="imag_proyecto/ChatGPT Image Apr 4, 2025, 09_58_19 AM.png" alt="Logo Rentacar" style="height: 150px;">
+    </header>
+
+    <nav class="text-center mb-4">
+        <a href="proyecto.html">Inicio</a> |
+        <a href="nosotros.html">Nosotros</a> |
+        <a href="servicios.html">Servicios</a> |
+        <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <main class="container text-center">
+        <h2 style="color: var(--color-secundario);">Servicios de Chofer</h2>
+
+        <!-- Fila 1 -->
+        <div class="row justify-content-center mt-4">
+            <!-- Chofer 1 -->
+            <div class="col-md-5 m-3 p-3 shadow-sm rounded" style="background-color: #fffaf7;">
+                <img src="imag_proyecto/chofer_ejecutivo.png" class="img-fluid mb-2" alt="Chofer ejecutivo">
+                <h5>Chofer Ejecutivo</h5>
+                <p>Precio por día: $700</p>
+                <p class="small text-muted">
+                    Servicio profesional para traslados ejecutivos, eventos corporativos o servicio personalizado de alto nivel.
+                    Solo habla español 
+                </p>
+                <input type="number" min="1" value="1" id="dias1" class="form-control mb-2">
+                <button onclick="calcularTotal(1, 700)" class="btn btn-primary w-100 mb-2">Calcular Total</button>
+                <p id="total1" class="mt-2"></p>
+                <a href="reserva.html" class="btn btn-success w-100 mt-2">Reservar</a>
+            </div>
+
+            <!-- Chofer 2 -->
+            <div class="col-md-5 m-3 p-3 shadow-sm rounded" style="background-color: #fffaf7;">
+                <img src="imag_proyecto/chofer_bilingue.png" class="img-fluid mb-2" alt="Chofer bilingüe">
+                <h5>Chofer Bilingüe</h5>
+                <p>Precio por día: $850</p>
+                <p class="small text-muted">
+                    Ideal para turistas internacionales. Nuestro chofer domina inglés y español para una atención clara y cómoda.
+                    Experiencia manejando camionetas ideal para grupos.
+                </p>
+                <input type="number" min="1" value="1" id="dias2" class="form-control mb-2">
+                <button onclick="calcularTotal(2, 850)" class="btn btn-primary w-100 mb-2">Calcular Total</button>
+                <p id="total2" class="mt-2"></p>
+                <a href="reserva.html" class="btn btn-success w-100 mt-2">Reservar</a>
+            </div>
+        </div>
+
+        <!-- Fila 2 -->
+        <div class="row justify-content-center">
+            <!-- Chofer 3 -->
+            <div class="col-md-5 m-3 p-3 shadow-sm rounded" style="background-color: #fffaf7;">
+                <img src="imag_proyecto/chofer_turistico.png" class="img-fluid mb-2" alt="Chofer turismo">
+                <h5>Chofer de Turismo</h5>
+                <p>Precio por día: $780</p>
+                <p class="small text-muted">
+                    Especializado en rutas turísticas. Conoce los mejores destinos y puntos de interés de la región.
+                    Habla solo español y ingles basico.
+                </p>
+                
+                <input type="number" min="1" value="1" id="dias3" class="form-control mb-2">
+                <button onclick="calcularTotal(3, 780)" class="btn btn-primary w-100 mb-2">Calcular Total</button>
+                <p id="total3" class="mt-2"></p>
+                <a href="reserva.html" class="btn btn-success w-100 mt-2">Reservar</a>
+            </div>
+
+            <!-- Chofer 4 -->
+            <div class="col-md-5 m-3 p-3 shadow-sm rounded" style="background-color: #fffaf7;">
+                <img src="imag_proyecto/chofer_traslados.png" class="img-fluid mb-2" alt="Chofer traslados">
+                <h5>Chofer para Traslados</h5>
+                <p>Precio por día: $750</p>
+                <p class="small text-muted">
+                    Perfecto para llevarte desde el aeropuerto al hotel o viceversa. Ideal para traslados largos.
+                    Domina el español y habla ingles basico.
+                </p>
+                
+                <input type="number" min="1" value="1" id="dias4" class="form-control mb-2">
+                <button onclick="calcularTotal(4, 750)" class="btn btn-primary w-100 mb-2">Calcular Total</button>
+                <p id="total4" class="mt-2"></p>
+                <a href="reserva.html" class="btn btn-success w-100 mt-2">Reservar</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="text-center p-3 mt-5">
+        <p>© 2025 Rentacar - Todos los derechos reservados</p>
+    </footer>
+
+</body>
+</html>

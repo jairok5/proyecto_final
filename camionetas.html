@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Renta de Camionetas - Rentacar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Script para cálculos -->
+    <script src="js/rentacar.js"></script>
+
+</head>
+
+<body>
+ <header class="text-center p-4">
+        <h1>Rentacar</h1>
+        <p>Tu renta de autos en un solo lugar</p>
+        <img src="imag_proyecto/ChatGPT Image Apr 4, 2025, 09_58_19 AM.png" alt="Logo Rentacar" style="height: 150px;">
+    </header>
+
+    <nav class="text-center mb-4">
+        <a href="proyecto.html">Inicio</a> |
+        <a href="nosotros.html">Nosotros</a> |
+        <a href="servicios.html">Servicios</a> |
+        <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <main class="container text-center">
+        <h2 style="color: var(--color-secundario);">Catálogo de Camionetas</h2>
+
+        <div class="row justify-content-center mt-4">
+            <!-- Camioneta 1 -->
+            <div class="col-md-5 m-3 p-3 shadow-sm rounded" style="background-color: #fffaf7;">
+                <img src="imag_proyecto/camioneta_highlander.webp" class="img-fluid mb-2" alt="Camioneta 1">
+                <h5>Modelo: Toyota Highlander</h5>
+                <p>Precio por día: $800</p>
+                <input type="number" min="1" value="1" id="dias1" class="form-control mb-2">
+                <button onclick="calcularTotal(1, 800)" class="btn btn-primary w-100 mb-2">Calcular Total</button>
+                <p id="total1" class="mt-2"></p>
+                <a href="reserva.html" class="btn btn-success w-100 mt-2">Reservar</a>
+            </div>
+
+            <!-- Camioneta 2 -->
+            <div class="col-md-5 m-3 p-3 shadow-sm rounded" style="background-color: #fffaf7;">
+                <img src="imag_proyecto/honda_pilot.png" class="img-fluid mb-2" alt="Camioneta 2">
+                <h5>Modelo: Honda Pilot</h5>
+                <p>Precio por día: $850</p>
+                <input type="number" min="1" value="1" id="dias2" class="form-control mb-2">
+                <button onclick="calcularTotal(2, 850)" class="btn btn-primary w-100 mb-2">Calcular Total</button>
+                <p id="total2" class="mt-2"></p>
+                <a href="reserva.html" class="btn btn-success w-100 mt-2">Reservar</a>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <!-- Camioneta 3 -->
+            <div class="col-md-5 m-3 p-3 shadow-sm rounded" style="background-color: #fffaf7;">
+                <img src="imag_proyecto/kia_sorento.png" class="img-fluid mb-2" alt="Camioneta 3">
+                <h5>Modelo: Kia Sorento</h5>
+                <p>Precio por día: $790</p>
+                <input type="number" min="1" value="1" id="dias3" class="form-control mb-2">
+                <button onclick="calcularTotal(3, 790)" class="btn btn-primary w-100 mb-2">Calcular Total</button>
+                <p id="total3" class="mt-2"></p>
+                <a href="reserva.html" class="btn btn-success w-100 mt-2">Reservar</a>
+            </div>
+
+            <!-- Camioneta 4 -->
+            <div class="col-md-5 m-3 p-3 shadow-sm rounded" style="background-color: #fffaf7;">
+                <img src="imag_proyecto/chovrolet_traverse.jpg" class="img-fluid mb-2" alt="Camioneta 4">
+                <h5>Modelo: Chevrolet Traverse</h5>
+                <p>Precio por día: $870</p>
+                <input type="number" min="1" value="1" id="dias4" class="form-control mb-2">
+                <button onclick="calcularTotal(4, 870)" class="btn btn-primary w-100 mb-2">Calcular Total</button>
+                <p id="total4" class="mt-2"></p>
+                <a href="reserva.html" class="btn btn-success w-100 mt-2">Reservar</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="text-center p-3 mt-5">
+        <p>© 2025 Rentacar - Todos los derechos reservados</p>
+        <div>
+            <a href="https://www.facebook.com" target="_blank" class="me-3">
+                <i class="fab fa-facebook fa-lg"></i>
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <i class="fab fa-instagram fa-lg"></i>
+            </a>
+        </div>
+    </footer>
+
+</body>
+
+</html>

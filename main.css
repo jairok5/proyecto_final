@@ -1,0 +1,81 @@
+
+:root {
+    --color-fondo: #fdf6f0;        /* Fondo crema claro */
+    --color-primario: #ffe4e1;     /* Rosado pastel */
+    --color-secundario: #add8e6;   /* Azul pastel */
+    --color-texto: #555555;        /* Gris oscuro suave */
+}
+
+h1 {
+    font-size: 65px;
+}
+
+body {
+    background-color: var(--color-fondo);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--color-texto);
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    font-size: 25px;
+    background-color: var(--color-primario);
+    color: var(--color-texto);
+    border-bottom: 4px solid #ddd;
+}
+
+
+nav a {
+    font-size: 50px;
+    color: var(--color-texto);
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+
+
+
+nav a:hover {
+    color: var(--color-secundario);
+}
+
+
+main h2 {
+    color: var(--color-secundario);
+    margin-bottom: 1rem;
+}
+
+footer {
+    background-color: var(--color-primario);
+    border-top: 2px solid #ddd;
+    font-size: 0.9rem;
+    color: var(--color-texto);
+}
+
+
+@media screen and (max-width: 600px) {
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+.btn-primary {
+    background-color: #add8e6;
+    border-color: #add8e6;
+    color: #333;
+}
+.btn-primary:hover {
+    background-color: #a0cfe6;
+    border-color: #a0cfe6;
+}
+
+.card-hover:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+}
